@@ -1,0 +1,4 @@
+//指定gradle wrapper 版本 因为创建时用的3.5版，所以只能是3.5 否则会出错
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.5'
+}
