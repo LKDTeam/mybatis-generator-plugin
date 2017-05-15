@@ -17,7 +17,7 @@ import java.util.List;
  * Created by whh on 2017/5/14.
  */
 public class Generator {
-    public  void generate() throws Exception{
+    public void generate() throws Exception {
         List<String> warnings = new ArrayList<String>();
         boolean overwrite = true;
         ConfigurationParser cp = new ConfigurationParser(warnings);
@@ -29,5 +29,14 @@ public class Generator {
         DefaultShellCallback callback = new DefaultShellCallback(overwrite);
         MyBatisGenerator myBatisGenerator = new MyBatisGenerator(config, callback, warnings);
         myBatisGenerator.generate(null);
+    }
+
+    public static void main(String[] args) {
+        Generator generator = new Generator();
+        try {
+            generator.generate();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

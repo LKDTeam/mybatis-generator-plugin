@@ -2,8 +2,9 @@ group 'spring-learn'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
-apply from :'libraries.gradle' //jar 包
-apply from :'task.gradle' //task 包
+apply plugin: 'idea'
+apply from: 'libraries.gradle' //jar 包
+apply from: 'task.gradle' //task 包
 
 //编译的版本
 sourceCompatibility = 1.8
