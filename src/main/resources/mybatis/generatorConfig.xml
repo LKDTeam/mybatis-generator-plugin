@@ -19,11 +19,11 @@
                         password="${jdbc.password}">
         </jdbcConnection>
 
-        <javaModelGenerator targetPackage="club.lkdteam.model" targetProject="E:\download"/>
+        <javaModelGenerator targetPackage="club.lkdteam.model" targetProject=".\src\main\java"/>
 
-        <sqlMapGenerator targetPackage="club.lkdteam.xml" targetProject="E:\download"/>
+        <sqlMapGenerator targetPackage="club.lkdteam.xml" targetProject=".\src\main\resources"/>
 
-        <javaClientGenerator targetPackage="club.lkdteam.mapper" targetProject="E:\download" type="XMLMAPPER"/>
+        <javaClientGenerator targetPackage="club.lkdteam.mapper" targetProject=".\src\main\java" type="XMLMAPPER"/>
 
         <table tableName="%"></table>
     </context>
