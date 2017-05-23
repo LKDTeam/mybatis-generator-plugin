@@ -7,6 +7,4 @@ mybatis 通用mapper插件地址：https://github.com/abel533/Mapper
 
 ### 目标：
 
-1.编写mybatis-generator的gradle插件。
-
-2.扩展通用接口。
+编写mybatis-generator的gradle插件。
