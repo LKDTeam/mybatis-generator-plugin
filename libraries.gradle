@@ -1,0 +1,12 @@
+dependencies {
+    compileOnly gradleApi()
+    compileOnly localGroovy()
+    compile(
+            'org.mybatis:mybatis:3.4.4',
+            'mysql:mysql-connector-java:5.1.39',
+            'org.mybatis.generator:mybatis-generator-core:1.3.4'
+    )
+    testCompile(
+            'junit:junit:4.12'
+    )
+}

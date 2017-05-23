@@ -1,0 +1,19 @@
+group 'spring-learn'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply from: 'libraries.gradle' //jar 包
+apply from: 'task.gradle' //task 包
+
+//编译的版本
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+// java编译的时候缺省状态下会因为中文字符而失败
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+repositories {
+    jcenter()//另一个maven仓库，据说更快
+    mavenCentral()
+}
